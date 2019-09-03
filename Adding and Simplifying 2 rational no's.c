@@ -18,7 +18,7 @@ int lcm(int m,int n)
   lcm = (m*n)/gcd(m,n);
   return lcm;
 }
-void simplify(int num,int den)
+void simplify(int num,int den) // must be up than add cause it is called by it and compiler must know it 1st
 {
   int factor = gcd(num,den);
   int num_final,den_final;
