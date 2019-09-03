@@ -4,7 +4,7 @@ int fact(int n)
   if(n>1)
    return n*fact(n-1);
   else
-   return n;
+   return 1; //For the case when imput is 0
 }
 void main()
 { int a,result;
