@@ -34,7 +34,14 @@ void add(int num1,int den1,int num2,int den2)
   printf("\n After adding :%d/%d",num3,den3);
   simplify(num3,den3);
 }
-
+void multiply(int num1,int den1,int num2,int den2)
+{
+  int num3,den3;
+  den3 = den1*den2;
+  num3 = num1*num2;
+  printf("\nAfter Multiplication : %d/%d",num3,den3);
+  simplify(num3,den3);
+}
 void main()
 {
  int num1,den1,num2,den2;
@@ -43,4 +50,5 @@ void main()
  printf("Enter another rational no.\n");
  scanf("%d %d",&num2,&den2); 
  add(num1,den1,num2,den2);
+  multiply(num1,den1,num2,den2);
 }
